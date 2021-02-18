@@ -17,7 +17,7 @@ on:
         required: false
         default: 'false'
 #  schedule:
-#    - cron: 0 18 */3 * *
+#    - cron: 0 5 * * *
 
 env:
   REPO_URL: https://github.com/project-openwrt/openwrt
@@ -27,11 +27,11 @@ env:
   DIY_P1_SH: project.sh
   DIY_P2_SH: project2.sh
 
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
-  UPLOAD_RELEASE: true
+  UPLOAD_COWTRANSFER: false
+  UPLOAD_WETRANSFER: false
+  UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
 jobs:
